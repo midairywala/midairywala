@@ -1,0 +1,13 @@
+{
+  "name": "midairywala",
+  "version": "1.0.0",
+  "description": "Mohammed I. Dairywala, MD - Personal Website",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build step required'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
+}
