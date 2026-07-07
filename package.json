@@ -1,0 +1,23 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "Personal website of Mohammed I. Dairywala, MD — integrated vascular surgery resident at Henry Ford Health Providence Hospital & Michigan State University College of Human Medicine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midairywala/midairywala.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midairywala/midairywala/issues"
+  },
+  "homepage": "https://github.com/midairywala/midairywala#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
