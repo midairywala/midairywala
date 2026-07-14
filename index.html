@@ -72,7 +72,7 @@
     --muted:#748394;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;color-scheme:light dark}
   body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
   .wrap{max-width:920px;margin:0 auto;padding:0 32px}
   h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-0.01em;line-height:1.15}
@@ -94,7 +94,7 @@
   .hero .inst{font-size:15px;color:var(--muted);margin-top:18px;max-width:52ch}
   .cta{display:inline-flex;gap:14px;margin-top:32px;flex-wrap:wrap}
   .btn{display:inline-block;padding:12px 24px;border-radius:3px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;will-change:transform}
-  .btn-primary{background:var(--ink);color:#fff}
+  .btn-primary{background:var(--ink);color:var(--bg)}
   .btn-primary:hover{background:var(--accent);transform:translateY(-1px)}
   .btn-ghost{border:1px solid var(--line);color:var(--ink)}
   .btn-ghost:hover{border-color:var(--ink)}
@@ -127,7 +127,7 @@
   .tl{border-left:2px solid var(--line);margin-left:6px}
   .tl-item{position:relative;padding:0 0 30px 30px}
   .tl-item:last-child{padding-bottom:0}
-  .tl-item::before{content:"";position:absolute;left:-1px;top:5px;width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-sizing:border-box;transform:translateX(-50%)}
+  .tl-item::before{content:"";position:absolute;left:-1px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);box-sizing:border-box;transform:translateX(-50%)}
   .tl-item .yr{font-size:13px;color:var(--muted);letter-spacing:.03em}
   .tl-item h3{font-size:18px;font-weight:500;margin:3px 0 2px}
   .tl-item .org{color:var(--ink-soft);font-size:15px}
@@ -150,6 +150,20 @@
     .js .reveal{opacity:1;transform:none;transition:none}
     html{scroll-behavior:auto}
     .btn-primary:hover{transform:none}
+  }
+
+  /* Automatic dark mode (follows device setting) */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#e9edf2;
+      --ink-soft:#aab6c3;
+      --bg:#10161e;
+      --bg-2:#182029;
+      --line:#2b343f;
+      --accent:#7ea9d8;
+      --muted:#7d8a99;
+    }
+    nav{background:rgba(16,22,30,.85)}
   }
 </style>
 <script>document.documentElement.classList.add('js');</script>
@@ -276,6 +290,7 @@
   <div class="social">
     <a href="https://www.linkedin.com/in/midairywala" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://twitter.com/midairywala" target="_blank" rel="noopener">X / Twitter</a>
+    <a href="https://github.com/midairywala" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></section>
 
